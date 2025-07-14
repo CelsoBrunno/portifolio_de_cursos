@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio // Cursos & Skills</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <style>
+        /* CSS com Tema Futurista */
+        
+        /* Definindo as variáveis de cor para facilitar a customização */
+        :root {
+            --cor-fundo: #0a0a1a; /* Azul quase preto */
+            --cor-container: #1a1a2e; /* Azul escuro para os cards */
+            --cor-neon-principal: #00d4ff; /* Ciano vibrante */
+            --cor-texto-principal: #e0e0e0; /* Branco/Cinza claro */
+            --cor-texto-secundario: #a0a0b0; /* Cinza um pouco mais escuro */
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-principal);
+            font-family: 'Roboto Mono', monospace; /* Fonte monoespaçada para o corpo */
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            border: 1px solid var(--cor-neon-principal);
+            border-radius: 8px;
+            padding: 25px;
+            background: linear-gradient(145deg, rgba(26, 26, 46, 0.2), rgba(10, 10, 26, 0.2));
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+        }
+
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif; /* Fonte futurista para títulos */
+            color: var(--cor-neon-principal);
+            text-shadow: 0 0 5px var(--cor-neon-principal), 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--cor-neon-principal);
+            opacity: 0.5;
+        }
+
+        .lista-cursos {
+            list-style: none;
+            padding: 0;
+        }
+
+        .curso-item {
+            background-color: var(--cor-container);
+            border-left: 4px solid var(--cor-neon-principal);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .curso-item:hover {
+            transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.15);
+        }
+
+        .curso-item strong {
+            font-size: 1.2em;
+            color: var(--cor-texto-principal);
+        }
+        
+        .curso-item p {
+            color: var(--cor-texto-secundario);
+            margin-bottom: 15px;
+        }
+        
+        .ferramentas-lista {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px; /* Espaço entre as tags */
+        }
+        
+        .ferramentas-titulo {
+            font-weight: bold;
+            color: var(--cor-texto-principal);
+        }
+        
+        .ferramentas-lista code {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px; /* Espaço entre o ícone e o texto */
+            background-color: rgba(0, 212, 255, 0.1); /* Fundo da tag com transparência */
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            color: var(--cor-neon-principal);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+        }
+
+        /* Estilo para os ícones */
+        .ferramentas-lista i {
+            font-size: 1.2em; /* Tamanho do ícone */
+            color: var(--cor-neon-principal);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Brunno Rocha // Professsor de T.I.</h1>
+        <hr>
+
+        <h2>Cursos Ministrados & Proficiência</h2>
+
+        <ul class="lista-cursos">
+
+            <li class="curso-item">
+                <strong>Desenvolver algoritmos</strong>
+                <p>"Curso fundamental para a formação de qualquer programador. Focado no desenvolvimento do raciocínio lógico e na resolução de problemas através de algoritmos. A jornada de aprendizado começa com os conceitos mais básicos da programação e avança progressivamente até a introdução à Programação Orientada a Objetos, preparando o aluno para aprender qualquer linguagem de programação."</p>
+                 <div class="ferramentas-lista">
+                    <span class="ferramentas-titulo">Conceitos:</span>
+                    <code>Lógica</code> <code>Algoritmos</code> <code>Orientação a Objetos</code>
+                </div>
+            </li>
+
+            <li class="curso-item">
+                <strong>Programador de sistemas em Python</strong>
+                <p>"Capacitação completa para o desenvolvimento de sistemas com Python. O curso abrange desde a sintaxe fundamental e lógica de programação até os paradigmas da Programação Orientada a Objetos (POO), permitindo a criação de código limpo e modular. Ao final, os alunos são introduzidos ao desenvolvimento web com a criação de servidores e APIs utilizando o micro-framework Flask."</p>
+                <div class="ferramentas-lista">
+                    <span class="ferramentas-titulo">Stack:</span>
+                    <code><i class="devicon-python-plain"></i>Python</code>
+                    <code><i class="devicon-flask-original"></i>Flask</code>
+                    <code>POO</code>
+                </div>
+            </li>
+
+
+            <li class="curso-item">
+                <strong>Criar e manter Banco de Dados</strong>
+                <p>"Curso prático focado na gestão de bancos de dados relacionais, utilizando o sistema MySQL, um dos mais populares do mercado. Os alunos aprendem a modelar, criar e manter bancos de dados, realizando consultas complexas com a linguagem SQL. A ferramenta gráfica MySQL Workbench é utilizada para facilitar a administração e o design do banco de dados."</p>
+                 <div class="ferramentas-lista">
+                    <span class="ferramentas-titulo">Stack:</span>
+                    <code><i class="devicon-mysql-plain-wordmark"></i>MySQL</code>
+                    <code><i class="devicon-sqldeveloper-plain"></i>SQL</code>
+                    <code><i class="devicon-mysql-plain"></i>Workbench</code>
+                </div>
+            </li>
+
+            <li class="curso-item">
+                <strong>Desenvolver aplicações web</strong>
+                <p>"Formação essencial para a criação de páginas e aplicações web modernas. O curso aborda o trio fundamental do front-end: HTML para a estruturação do conteúdo, CSS para a estilização e design responsivo, e JavaScript para criar interatividade e dinamismo nas páginas, resultando em interfaces de usuário ricas e funcionais."</p>
+                 <div class="ferramentas-lista">
+                    <span class="ferramentas-titulo">Stack:</span>
+                    <code><i class="devicon-html5-plain"></i>HTML5</code>
+                    <code><i class="devicon-css3-plain"></i>CSS3</code>
+                    <code><i class="devicon-javascript-plain"></i>JavaScript</code>
+                </div>
+            </li>
+
+            <li class="curso-item">
+                <strong>Desenvolver aplicações mobile</strong>
+                <p>"Curso imersivo no desenvolvimento de aplicativos para a plataforma Android. Utilizando a linguagem oficial Kotlin e o ambiente de desenvolvimento Android Studio, os alunos aprendem a construir interfaces de usuário tanto pelo método tradicional com XML quanto pela abordagem moderna com Jetpack Compose. O curso cobre os principais componentes do ecossistema Android para a criação de aplicativos nativos."</p>
+                 <div class="ferramentas-lista">
+                    <span class="ferramentas-titulo">Stack:</span>
+                    <code><i class="devicon-kotlin-plain"></i>Kotlin</code>
+                    <code><i class="devicon-androidstudio-plain"></i>Android Studio</code>
+                    <code><i class="devicon-jetpackcompose-plain"></i>Jetpack Compose</code>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
